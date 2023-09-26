@@ -120,7 +120,7 @@ footer {
   background-color: #25D366;
   text-align: center;
   padding: 10px 0;
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -154,6 +154,9 @@ footer h5 {
   pointer-events: auto !important;
   position: relative;
   z-index: 1; /* or any number greater than the z-index of overlaying elements */
+  display: block;
+  width: 100%;
+  margin-top: 2px;
 }
 
 .duration-dropdown {
@@ -211,12 +214,6 @@ footer h5 {
   background-color: #f01515;
 }
 
-.btn {
-  display: block;
-  width: 100%;
-  margin-top: 2px;
-  /* Add some margin for better appearance */
-}
 
 :root {
   --sidebar-bg: linear-gradient(145deg, #f1f6f8 0%, #FADBD8 100%);
